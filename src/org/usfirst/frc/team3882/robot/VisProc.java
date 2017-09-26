@@ -5,12 +5,11 @@ import org.opencv.core.Mat;
 import org.opencv.core.Point;
 import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
-
 import edu.wpi.cscore.CvSink;
 import edu.wpi.cscore.CvSource;
 import edu.wpi.cscore.CameraServerJNI;
 
-public class Theta {
+public class VisProc {
 
 	public static Mat vidProc(Mat s0, double[] hue, double[] sat, double[] lum) {
         Scalar lower = new Scalar(hue[0], sat[0], lum[0]);

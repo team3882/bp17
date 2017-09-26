@@ -45,7 +45,7 @@ public class Robot extends IterativeRobot {
             while(!Thread.interrupted()) {
                 sink.grabFrame(s0);
                 //Pipeline begins here:
-                Theta.vidProc(s0, hue, sat, lum);
+                VisProc.vidProc(s0, hue, sat, lum);
                 outStream.putFrame(out);
                 server.setSource(outStream);
             }
